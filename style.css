@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+
+:root {
+  --White-BG: hsl(0, 0%, 100%);
+  --bg-white-pattern: hsl(225, 100%, 98%);
+  --color-green: #14ca7c;
+  --color-grey-graph: #a3a6b8;
+  --very-dark-black: #20223b;
+  --color-dark-blue: #341bd0;
+  --desaturated-blue: rgb(29, 121, 202);
+
+  /* text */
+  --Dark-Grayish-Blue-text: hsl(228, 12%, 44%);
+
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--very-dark-black);
+  display: grid;
+  grid-template-areas: "main main aside";
+}
+
+.main-section {
+  grid-area: main;
+}
+
+.main-aside {
+  grid-area: aside;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Utility Class */
+.container {
+  max-width: 100%;
+  padding: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.fa-virus,
+.fa-chart-bar {
+  color: var(--color-green);
+  font-size: 1.4rem;
+}
+
+.fa-chart-bar {
+  font-size: 2.6rem;
+  margin-right: 11px;
+}
+
+.logo-name {
+  font-family: var(--font-family);
+  color: var(--desaturated-blue);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+
+.country-select {
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #dedede;
+  font-size: 17px;
+  background: transparent;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 30px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+.fa-user-friends,
+.fa-user-shield,
+.fa-user-alt-slash {
+  font-size: 36px;
+  color: var(--desaturated-blue);
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.heading-primary {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.count {
+  font-size: 20px;
+  color: var(--Dark-Grayish-Blue-text);
+  letter-spacing: 1.4px;
+}
+
+.heading-secondary {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  letter-spacing: 1.4px;
+}
+
+/* sections */
+.main-section {
+  background-color: var(--White-BG);
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.main-aside {
+  background-color: var(--bg-white-pattern);
+}
+
+/* Nav section */
+.main-nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Country Details */
+.country-details .parent-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.country-details .parent-card .card {
+  background-color: rgb(245, 241, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  height: 260px;
+  border-top: 6px solid hsl(195, 100%, 50%);
+  border-radius: 11px;
+}

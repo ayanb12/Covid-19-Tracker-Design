@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Covid Tracker</title>
+  </head>
+
+  <body onload="fetchAllCountries()">
+    <main class="main-section">
+      <nav class="main-nav">
+        <div class="container wrapper">
+          <div>
+            <i class="far fa-chart-bar"></i>
+            <span class="logo-name"
+              >C<span><i class="fas fa-virus"></i></span>vid-19 Tracker</span
+            >
+          </div>
+          <select class="country-select"> </select>
+        </div>
+      </nav>
+
+      <!-- Country-Details -->
+      <section class="country-details">
+        <div class="container">
+          <h1 class="heading-secondary">Country Details</h1>
+          <div class="parent-card">
+            <div class="card">
+              <i class="fas fa-user-friends"></i>
+              <h2 class="heading-primary">2181508</h2>
+              <span class="count">Confirmed</span>
+            </div>
+            <div class="card">
+              <i class="fas fa-user-shield"></i>
+              <h2 class="heading-primary">21815</h2>
+              <span class="count">Recovered</span>
+            </div>
+            <div class="card">
+              <i class="fas fa-user-alt-slash"></i>
+              <h2 class="heading-primary">2181</h2>
+              <span class="count">Deaths</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Affected States -->
+      <section class="affected-states">
+        <div class="container">
+          <div class="affected-headings">
+            <h1 class="heading-secondary">Affected States</h1>
+            <a href="#" class="view-all">See all 20 states</a>
+          </div>
+          <div class="parent-card">
+            <!-- 1st Card -->
+            <div class="card">
+              <div>
+                <i class="fas fa-circle"></i>
+                <span class="state-name">Los Angeles, California, US</span>
+              </div>
+
+              <div>
+                <span class="state-info">Confirmed</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">20,000</a>
+
+              <div>
+                <span class="state-info">Deaths</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">9000</a>
+            </div>
+
+            <!-- 2nd Card -->
+            <div class="card">
+              <div>
+                <i class="fas fa-circle"></i>
+                <span class="state-name">Los Angeles, California, US</span>
+              </div>
+
+              <div>
+                <span class="state-info">Confirmed</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">20,000</a>
+
+              <div>
+                <span class="state-info">Deaths</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">9000</a>
+            </div>
+
+            <!-- 3rd Card -->
+            <div class="card">
+              <div>
+                <i class="fas fa-circle"></i>
+                <span class="state-name">Los Angeles, California, US</span>
+              </div>
+
+              <div>
+                <span class="state-info">Confirmed</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">20,000</a>
+
+              <div>
+                <span class="state-info">Deaths</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <a href="#" class="btn-primary">9000</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="main-aside">
+      <h1>Hello</h1>
+    </aside>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
