@@ -101,12 +101,23 @@ ul li {
 .heading-primary {
   font-size: 30px;
   font-weight: bold;
+  letter-spacing: 1.2px;
 }
 
 .count {
   font-size: 20px;
   color: var(--Dark-Grayish-Blue-text);
   letter-spacing: 1.4px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.1rem 1.1rem;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(38, 174, 228);
+  border-radius: 20px;
+  cursor: default;
 }
 
 .heading-secondary {
@@ -158,4 +169,59 @@ ul li {
   height: 260px;
   border-top: 6px solid hsl(195, 100%, 50%);
   border-radius: 11px;
+}
+
+/* Affected states */
+.affected-states .affected-headings {
+  display: flex;
+  align-items: center;
+}
+
+.affected-states .affected-headings .view-all {
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+  margin-left: 25px;
+  font-weight: bold;
+  color: var(--color-dark-blue);
+}
+
+.affected-states .affected-headings .view-all:hover {
+  color: rgb(36, 145, 189);
+}
+
+.affected-states .parent-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.affected-states .parent-card .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  background-color: rgb(245, 241, 238);
+}
+
+.fa-circle {
+  color: var(--desaturated-blue);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.affected-states .parent-card .card .state-name {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: var(--very-dark-black);
+}
+
+.affected-states .parent-card .card .state-info {
+  color: var(--Dark-Grayish-Blue-text);
+  margin-right: 10px;
+  letter-spacing: 1.1px;
+}
+
+.fa-long-arrow-alt-right {
+  color: var(--color-dark-blue);
 }
