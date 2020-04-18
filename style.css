@@ -119,6 +119,22 @@ ul li {
   cursor: default;
 }
 
+.btn-secondary {
+  display: inline-block;
+  color: white;
+  padding: 0.8rem;
+  background-color: rgb(146, 178, 245);
+  width: 20%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  transition: opacity 0.1s ease-in;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
 .heading-secondary {
   font-size: 24px;
   margin-bottom: 2rem;
@@ -272,4 +288,59 @@ ul li {
   font-size: bold;
   font-size: 19px;
   letter-spacing: 1.2px;
+}
+
+/* List page styles*/
+.main-list .parent-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.main-list .parent-card .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  background-color: rgb(245, 241, 238);
+}
+
+.main-list .fa-circle {
+  color: var(--desaturated-blue);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.main-list .parent-card .card .state-name {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: var(--very-dark-black);
+}
+
+.main-list .parent-card .card .state-info {
+  color: var(--Dark-Grayish-Blue-text);
+  margin-right: 10px;
+  letter-spacing: 1.1px;
+}
+
+.fa-long-arrow-alt-right {
+  color: var(--color-dark-blue);
+}
+
+@media (max-width: 500px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "aside";
+    grid-gap: 1rem;
+  }
+
+  .main-section {
+    grid-area: main;
+  }
+  .main-aside {
+    grid-area: aside;
+  }
 }
